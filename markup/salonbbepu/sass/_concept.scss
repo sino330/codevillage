@@ -1,0 +1,22 @@
+// 立幅560px＋407px⁼967px、横幅1282px
+#concept {
+    background-color: #FFFFFF;
+    width:1282px;
+    height:967px;
+    background:linear-gradient(#A193861F 50%,#A1938689 50%);
+    color: #707070;
+}
+// 画像1(横幅675px)、画像2(391px)
+.concept-wrap{
+    display:flex;
+    justify-content: space-between;
+    .concept-item_img{
+        :nth-child(2){
+            margin-left: 11px;
+        }
+    }
+    .concept-item_title{
+    font-size: 40px;
+    }
+}
+
