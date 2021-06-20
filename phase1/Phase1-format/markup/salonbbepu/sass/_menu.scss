@@ -1,0 +1,34 @@
+// menu縦幅921px
+#menu {
+  width: 1282px;
+  height: 921px;
+  .menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin-left: 10.7rem;
+    .menu-item {
+      // 画像横幅270px、立幅555px(inner1068px)=28%
+      width: 28%;
+      height: 100%;
+      .menu-img {
+        width: 100%;
+      }
+      .menu-img img {
+        width: 100%;
+        height: 100%;
+      }
+      .menu-content {
+        .menu-item_title {
+          text-align: center;
+          font-size: 30px;
+          margin-top: 3.4rem;
+        }
+        .menu-item_price {
+          text-align: right;
+          margin-top: 3.4rem;
+        }
+      }
+    }
+  }
+}

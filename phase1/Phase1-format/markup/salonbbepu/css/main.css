@@ -1,0 +1,399 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.67;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 26rem 0rem 10.7rem 0rem;
+}
+
+.title {
+  color: #707070;
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.8rem;
+  margin-left: 10.7rem;
+  margin-bottom: 11px;
+}
+
+.title::after {
+  display: inline-block;
+  content: "";
+  width: 11rem;
+  border-top: 1px solid #707070;
+  margin-left: 20px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  background-color: inherit;
+  padding: 68px 77px;
+  position: absolute;
+  z-index: 20;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  padding: 21px 20px;
+  color: #707070;
+}
+
+.header-logo {
+  font-size: 3.8rem;
+  margin: 5px 0;
+}
+
+.header-hover {
+  display: inline-block;
+  background-color: inherit;
+  color: #000;
+  opacity: 0.5;
+}
+
+.header-hover:hover {
+  opacity: 1;
+  border-bottom: solid #000;
+  border-width: 2px;
+}
+
+#first-v {
+  background-color: #fff;
+  width: 1283px;
+  height: 800px;
+  position: relative;
+  color: #000000;
+}
+
+#first-v .first-v-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  text-align: center;
+}
+
+#first-v .first-v-wrap .first-v_info {
+  width: 46%;
+  height: 100%;
+  font-size: 3.8rem;
+}
+
+#first-v .first-v-wrap .first-v_info .first-v_title {
+  width: 100%;
+  height: 26.5%;
+  margin: 29.6rem auto;
+}
+
+#first-v .first-v-wrap .first-v_info .first-v_title .first-v_title_ja {
+  margin-bottom: 4.8rem;
+}
+
+#first-v .first-v-wrap .first-v_info .first-v_title .first-v_title_en {
+  font-family: "Dancing Script", cursive;
+}
+
+#first-v .first-v-wrap .first-v-img {
+  width: 54%;
+  height: 100%;
+}
+
+#first-v .first-v-wrap .first-v-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#menu {
+  width: 1282px;
+  height: 921px;
+}
+
+#menu .menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  margin-left: 10.7rem;
+}
+
+#menu .menu-wrap .menu-item {
+  width: 28%;
+  height: 100%;
+}
+
+#menu .menu-wrap .menu-item .menu-img {
+  width: 100%;
+}
+
+#menu .menu-wrap .menu-item .menu-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#menu .menu-wrap .menu-item .menu-content .menu-item_title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3.4rem;
+}
+
+#menu .menu-wrap .menu-item .menu-content .menu-item_price {
+  text-align: right;
+  margin-top: 3.4rem;
+}
+
+#concept {
+  background-color: #ffffff;
+  width: 1282px;
+  height: 967px;
+  background: linear-gradient(#a193861f 50%, #a1938689 50%);
+  color: #707070;
+}
+
+.concept-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  height: 100%;
+  margin-left: 10.7rem;
+}
+
+.concept-wrap .concept-item_img {
+  display: flex;
+  width: 100%;
+  height: 67%;
+}
+
+.concept-wrap .concept-item_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.concept-wrap .concept-item_img :nth-child(2) {
+  margin-left: 11px;
+}
+
+.concept-wrap .concept-item_info {
+  display: flex;
+  justify-content: space-between;
+  width: 94.4rem;
+  height: 13rem;
+  margin: 6rem auto;
+}
+
+.concept-wrap .concept-item_info .concept-item_title {
+  width: 44.5rem;
+  height: 4.2rem;
+  font-size: 40px;
+}
+
+.concept-wrap .concept-item_info .concept-item_desc {
+  width: 44.2rem;
+  height: 13rem;
+}
+
+#access {
+  width: 1282px;
+  height: 767px;
+  background-color: #a193861f;
+}
+
+#access .access-wrap {
+  background-color: #D0C5BA;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 39.1rem;
+}
+
+#access .access-wrap .access-item {
+  margin-left: 10.4rem;
+  margin-top: 10.1rem;
+  color: #FFFFFF;
+}
+
+#access .access-wrap .access-item .access-item_title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 3rem;
+  color: #00000038;
+}
+
+#access .access-wrap .access-item .access-item_map {
+  position: relative;
+  width: 53%;
+  height: 0;
+}
+
+#access .access-wrap .access-item .access-item_map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 1282px;
+  height: 34.2rem;
+  color: #7070704d;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  height: 3.2rem;
+  margin-left: 10.3rem;
+  margin-top: 29.5rem;
+  border-top: 1px solid #7070704d;
+}
+
+.company_info {
+  font-size: 32px;
+  margin-top: 83.5px;
+}
+
+.company_info i {
+  color: #000;
+  margin-left: 9px;
+}
+
+.reserve {
+  font-size: 18px;
+  margin-top: 80.5px;
+}
+
+.reserve .reserve-btn {
+  width: 184px;
+  height: 37px;
+  opacity: 0.5;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
