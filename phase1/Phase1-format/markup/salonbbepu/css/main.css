@@ -126,6 +126,14 @@ body {
   padding: 26rem 0rem 10.7rem 0rem;
 }
 
+@media (max-width: 376px) {
+  .inner {
+    width: 100%;
+    height: 100%;
+    padding: 6rem 0 5.0rem 0rem;
+  }
+}
+
 .title {
   color: #707070;
   font-size: 18px;
@@ -146,19 +154,64 @@ body {
 }
 
 header {
-  width: 100%;
-  display: flex;
+  width: 1282px;
   background-color: inherit;
   padding: 68px 77px;
   position: absolute;
   z-index: 20;
 }
 
-header nav {
-  width: 40%;
+@media (max-width: 376px) {
+  header {
+    background-color: #fff;
+    height: 7rem;
+    position: relative;
+  }
 }
 
-header nav ul {
+header .header-wrap {
+  display: flex;
+  width: 70.7rem;
+}
+
+@media (max-width: 376px) {
+  header .header-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+header .header-wrap .header-logo {
+  font-size: 3.8rem;
+  margin: 5px 0;
+}
+
+@media (max-width: 376px) {
+  header .header-wrap .header-logo {
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 17.7rem;
+    height: 2.2rem;
+    position: relative;
+    margin: auto 2.4rem;
+  }
+}
+
+header .header-wrap .ham {
+  display: none;
+}
+
+header .header-wrap .header-nav {
+  width: 38.1rem;
+  height: 4.1rem;
+}
+
+header .header-wrap .header-nav nav {
+  width: 38.1rem;
+  height: 4.2rem;
+}
+
+header .header-wrap .header-nav ul {
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
@@ -166,9 +219,23 @@ header nav ul {
   color: #707070;
 }
 
-.header-logo {
-  font-size: 3.8rem;
-  margin: 5px 0;
+@media (max-width: 376px) {
+  header .header-wrap .header-nav {
+    display: none;
+  }
+  header .header-wrap .ham {
+    display: flex;
+    width: 1.6rem;
+    height: 1.4rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  header .header-wrap .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  }
 }
 
 .header-hover {
@@ -195,39 +262,48 @@ header nav ul {
 #first-v .first-v-wrap {
   width: 100%;
   height: 100%;
-  display: flex;
   position: absolute;
   text-align: center;
+  background-image: url("../image/Blond woman with long curly beautiful hair@2x.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-#first-v .first-v-wrap .first-v_info {
-  width: 46%;
-  height: 100%;
+#first-v .first-v-wrap .first-v_title {
+  text-align: center;
+  width: 30%;
+  height: 26.5%;
+  margin-top: 29.6rem;
+  margin-left: 10.7rem;
+  text-align: center;
   font-size: 3.8rem;
 }
 
-#first-v .first-v-wrap .first-v_info .first-v_title {
-  width: 100%;
-  height: 26.5%;
-  margin: 29.6rem auto;
-}
-
-#first-v .first-v-wrap .first-v_info .first-v_title .first-v_title_ja {
+#first-v .first-v-wrap .first-v_title .first-v_title_ja {
   margin-bottom: 4.8rem;
 }
 
-#first-v .first-v-wrap .first-v_info .first-v_title .first-v_title_en {
+#first-v .first-v-wrap .first-v_title .first-v_title_en {
   font-family: "Dancing Script", cursive;
 }
 
-#first-v .first-v-wrap .first-v-img {
-  width: 54%;
-  height: 100%;
-}
-
-#first-v .first-v-wrap .first-v-img img {
-  width: 100%;
-  height: 100%;
+@media (max-width: 376px) {
+  #first-v .first-v-wrap {
+    width: 100%;
+    background-image: url("../image/Blond woman with long curly beautiful hair.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  #first-v .first-v-wrap .first-v_title {
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    font-size: 2.8rem;
+  }
 }
 
 #menu {
