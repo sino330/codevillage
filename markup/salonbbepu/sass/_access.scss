@@ -1,5 +1,35 @@
-#access{
-    width: 1282px;
-    height: 767px;
-    background-color: #A193861F;
+#access {
+  width: 1282px;
+  height: 767px;
+  background-color: #a193861f;
+  .access-wrap {
+    background-color: #D0C5BA;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 39.1rem;
+    .access-item{
+      margin-left: 10.4rem;
+      margin-top: 10.1rem;
+      color: #FFFFFF;
+      .access-item_title{
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 3rem;
+        color: #00000038;
+      }
+      .access-item_map{
+        position: relative;
+        width: 53%;
+        height: 0;
+        iframe{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }

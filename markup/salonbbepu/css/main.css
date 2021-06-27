@@ -123,7 +123,15 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 26rem 7rem 10.7rem 10.7rem;
+  padding: 26rem 0rem 10.7rem 0rem;
+}
+
+@media (max-width: 376px) {
+  .inner {
+    width: 100%;
+    height: 100%;
+    padding: 6rem 0 5.0rem 0rem;
+  }
 }
 
 .title {
@@ -133,6 +141,7 @@ body {
   justify-content: left;
   align-items: center;
   font-size: 1.8rem;
+  margin-left: 10.7rem;
   margin-bottom: 11px;
 }
 
@@ -145,19 +154,64 @@ body {
 }
 
 header {
-  width: 100%;
-  display: flex;
+  width: 1282px;
   background-color: inherit;
   padding: 68px 77px;
   position: absolute;
   z-index: 20;
 }
 
-header nav {
-  width: 40%;
+@media (max-width: 376px) {
+  header {
+    background-color: #fff;
+    height: 7rem;
+    position: relative;
+  }
 }
 
-header nav ul {
+header .header-wrap {
+  display: flex;
+  width: 70.7rem;
+}
+
+@media (max-width: 376px) {
+  header .header-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+header .header-wrap .header-logo {
+  font-size: 3.8rem;
+  margin: 5px 0;
+}
+
+@media (max-width: 376px) {
+  header .header-wrap .header-logo {
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 17.7rem;
+    height: 2.2rem;
+    position: relative;
+    margin: auto 2.4rem;
+  }
+}
+
+header .header-wrap .ham {
+  display: none;
+}
+
+header .header-wrap .header-nav {
+  width: 38.1rem;
+  height: 4.1rem;
+}
+
+header .header-wrap .header-nav nav {
+  width: 38.1rem;
+  height: 4.2rem;
+}
+
+header .header-wrap .header-nav ul {
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
@@ -165,9 +219,23 @@ header nav ul {
   color: #707070;
 }
 
-.header-logo {
-  font-size: 3.8rem;
-  margin: 5px 0;
+@media (max-width: 376px) {
+  header .header-wrap .header-nav {
+    display: none;
+  }
+  header .header-wrap .ham {
+    display: flex;
+    width: 1.6rem;
+    height: 1.4rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  header .header-wrap .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  }
 }
 
 .header-hover {
@@ -191,29 +259,51 @@ header nav ul {
   color: #000000;
 }
 
-.first-v-wrap {
+#first-v .first-v-wrap {
   width: 100%;
   height: 100%;
-  display: flex;
   position: absolute;
   text-align: center;
+  background-image: url("../image/Blond woman with long curly beautiful hair@2x.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.first-v-wrap .first-v_title {
-  width: 46%;
-  height: 100%;
-  margin: 29.6rem 29.0rem 10.7rem 9.7rem;
+#first-v .first-v-wrap .first-v_title {
+  text-align: center;
+  width: 30%;
+  height: 26.5%;
+  margin-top: 29.6rem;
+  margin-left: 10.7rem;
+  text-align: center;
   font-size: 3.8rem;
 }
 
-.first-v-wrap .first-v_title .first-v-title_ja {
+#first-v .first-v-wrap .first-v_title .first-v_title_ja {
   margin-bottom: 4.8rem;
 }
 
-.first-v-wrap .first-v-img img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+#first-v .first-v-wrap .first-v_title .first-v_title_en {
+  font-family: "Dancing Script", cursive;
+}
+
+@media (max-width: 376px) {
+  #first-v .first-v-wrap {
+    width: 100%;
+    background-image: url("../image/Blond woman with long curly beautiful hair.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+  #first-v .first-v-wrap .first-v_title {
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    font-size: 2.8rem;
+  }
 }
 
 #menu {
@@ -252,30 +342,94 @@ header nav ul {
 }
 
 #concept {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 1282px;
   height: 967px;
-  background: linear-gradient(#A193861F 50%, #A1938689 50%);
+  background: linear-gradient(#a193861f 50%, #a1938689 50%);
   color: #707070;
 }
 
 .concept-wrap {
   display: flex;
   justify-content: space-between;
+  width: 84%;
+  height: 100%;
+  margin-left: 10.7rem;
+}
+
+.concept-wrap .concept-item_img {
+  display: flex;
+  width: 100%;
+  height: 67%;
+}
+
+.concept-wrap .concept-item_img img {
+  width: 100%;
+  height: 100%;
 }
 
 .concept-wrap .concept-item_img :nth-child(2) {
   margin-left: 11px;
 }
 
-.concept-wrap .concept-item_title {
+.concept-wrap .concept-item_info {
+  display: flex;
+  justify-content: space-between;
+  width: 94.4rem;
+  height: 13rem;
+  margin: 6rem auto;
+}
+
+.concept-wrap .concept-item_info .concept-item_title {
+  width: 44.5rem;
+  height: 4.2rem;
   font-size: 40px;
+}
+
+.concept-wrap .concept-item_info .concept-item_desc {
+  width: 44.2rem;
+  height: 13rem;
 }
 
 #access {
   width: 1282px;
   height: 767px;
-  background-color: #A193861F;
+  background-color: #a193861f;
+}
+
+#access .access-wrap {
+  background-color: #D0C5BA;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 39.1rem;
+}
+
+#access .access-wrap .access-item {
+  margin-left: 10.4rem;
+  margin-top: 10.1rem;
+  color: #FFFFFF;
+}
+
+#access .access-wrap .access-item .access-item_title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 3rem;
+  color: #00000038;
+}
+
+#access .access-wrap .access-item .access-item_map {
+  position: relative;
+  width: 53%;
+  height: 0;
+}
+
+#access .access-wrap .access-item .access-item_map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
