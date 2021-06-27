@@ -8,44 +8,34 @@
   .first-v-wrap {
     width: 100%;
     height: 100%;
+    display: flex;
     position: absolute;
     text-align: center;
-    background-image: url("../image/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x.png");
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    background-position: right;
     // titlediv,立幅214px、横幅390px
     // 横幅594px
-    .first-v_title {
-      text-align: center;
-      width: 30%;
-      height: 26.5%;
-      margin-top: 29.6rem;
-      margin-left: 10.7rem;
-      text-align: center;
+    .first-v_info {
+      width: 46%;
+      height: 100%;
       font-size: 3.8rem;
-      .first-v_title_ja {
-        margin-bottom: 4.8rem;
-      }
-      .first-v_title_en {
-        font-family: "Dancing Script", cursive;
+      .first-v_title {
+        width: 100%;
+        height: 26.5%;
+        margin:29.6rem auto;
+        .first-v_title_ja {
+          margin-bottom: 4.8rem;
+        }
+        .first-v_title_en {
+          font-family: "Dancing Script", cursive;
+        }
       }
     }
-  }
-  @include sp {
-    .first-v-wrap {
-      width: 100%;
-      background-image: url("../image/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png");
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      .first-v_title {
-        color: #fff;
-        position: absolute;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        font-size: 2.8rem;
+    // 画像横幅689px
+    .first-v-img {
+      width: 54%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
       }
     }
   }
