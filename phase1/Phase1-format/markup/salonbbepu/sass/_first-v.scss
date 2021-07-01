@@ -1,41 +1,61 @@
 #first-v {
   background-color: #fff;
-  width: 1283px;
-  height: 800px;
+  width: 128.2rem;
+  height: 80rem;
   position: relative;
   color: #000000;
+  @include sp{
+    width: 59.9rem;
+    height: 59.7rem;
+  }
   // // 画像立幅800px、高さ1283px
   .first-v-wrap {
     width: 100%;
     height: 100%;
-    display: flex;
     position: absolute;
     text-align: center;
+    background-image: url("../image/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    @include sp{
+      background-image: url("../image/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png");
+      background-size: cover;
+      background-position: top;
+      position: relative;
+    }
     // titlediv,立幅214px、横幅390px
     // 横幅594px
-    .first-v_info {
-      width: 46%;
-      height: 100%;
+    .first-v_title {
+      text-align: center;
+      width: 30%;
+      height: 26.5%;
+      margin-top: 29.6rem;
+      margin-left: 10.7rem;
+      text-align: center;
       font-size: 3.8rem;
-      .first-v_title {
-        width: 100%;
-        height: 26.5%;
-        margin:29.6rem auto;
-        .first-v_title_ja {
-          margin-bottom: 4.8rem;
-        }
-        .first-v_title_en {
-          font-family: "Dancing Script", cursive;
-        }
+      .first-v_title_ja {
+        margin-bottom: 4.8rem;
+      }
+      .first-v_title_en {
+        font-family: "Dancing Script", cursive;
       }
     }
-    // 画像横幅689px
-    .first-v-img {
-      width: 54%;
-      height: 100%;
-      img{
-        width: 100%;
-        height: 100%;
+  }
+  @include sp {
+    .first-v-wrap {
+      // width: 100%;
+      // background-image: url("../image/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png");
+      // background-size: cover;
+      // background-position: top;
+      // position: relative;
+      .first-v_title {
+        color: #fff;
+        position: absolute;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        font-size: 2.8rem;
       }
     }
   }

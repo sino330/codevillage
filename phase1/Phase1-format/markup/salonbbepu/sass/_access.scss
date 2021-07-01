@@ -1,7 +1,10 @@
 #access {
-  width: 1282px;
-  height: 767px;
+  width: 128.2rem;
+  height: 76.7rem;
   background-color: #a193861f;
+  @include sp{
+    width: 59.9rem;
+  }
   .access-wrap {
     background-color: #D0C5BA;
     display: flex;

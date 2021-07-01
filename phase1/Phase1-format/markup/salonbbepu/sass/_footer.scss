@@ -1,8 +1,11 @@
 footer {
   background-color: #ffffff;
-  width: 1282px;
+  width: 128.2rem;
   height: 34.2rem;
   color: #7070704d;
+  @include sp{
+    width: 59.9rem;
+  }
 }
 // 立幅342px、横幅1283px
 .footer-wrap {

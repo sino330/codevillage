@@ -1,16 +1,32 @@
 // menu縦幅921px
 #menu {
-  width: 1282px;
-  height: 921px;
+  width: 128.2rem;
+  height: 92.1rem;
+  @include sp{
+    width: 59.9rem;
+    height: 184.373rem;
+  }
   .menu-wrap {
     display: flex;
     justify-content: space-between;
     width: 83%;
     margin-left: 10.7rem;
+    @include sp{
+      width: 94%;
+      display: flex;
+      flex-direction: column;
+      padding-left:2rem ;
+      padding-right:2rem;
+    }
     .menu-item {
       // 画像横幅270px、立幅555px(inner1068px)=28%
       width: 28%;
       height: 100%;
+      @include sp{
+        width: 100%;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+      }
       .menu-img {
         width: 100%;
       }

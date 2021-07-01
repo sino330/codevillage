@@ -126,6 +126,15 @@ body {
   padding: 26rem 0rem 10.7rem 0rem;
 }
 
+@media (max-width: 599px) {
+  .inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 6rem 0 5rem 0rem;
+  }
+}
+
 .title {
   color: #707070;
   font-size: 18px;
@@ -137,6 +146,12 @@ body {
   margin-bottom: 11px;
 }
 
+@media (max-width: 599px) {
+  .title {
+    margin-left: 2rem;
+  }
+}
+
 .title::after {
   display: inline-block;
   content: "";
@@ -146,29 +161,93 @@ body {
 }
 
 header {
-  width: 100%;
-  display: flex;
+  width: 128.1rem;
   background-color: inherit;
   padding: 68px 77px;
   position: absolute;
   z-index: 20;
 }
 
-header nav {
-  width: 40%;
+@media (max-width: 599px) {
+  header {
+    width: 59.9rem;
+    height: 70rem;
+    background-color: #fff;
+    height: 7rem;
+    position: relative;
+  }
 }
 
-header nav ul {
+header .header-wrap {
+  display: flex;
+  width: 70.7rem;
+}
+
+@media (max-width: 599px) {
+  header .header-wrap {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+header .header-wrap .header-logo {
+  font-size: 3.8rem;
+  margin: 5px 0;
+}
+
+@media (max-width: 599px) {
+  header .header-wrap .header-logo {
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 17.7rem;
+    height: 2.2rem;
+    position: relative;
+    margin: auto 2.4rem;
+  }
+}
+
+header .header-wrap .ham {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  header .header-wrap .ham {
+    display: flex;
+    width: 1.6rem;
+    height: 1.4rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  header .header-wrap .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  }
+}
+
+header .header-wrap .header-nav {
+  width: 38.1rem;
+  height: 4.1rem;
+}
+
+@media (max-width: 599px) {
+  header .header-wrap .header-nav {
+    display: none;
+  }
+}
+
+header .header-wrap .header-nav nav {
+  width: 38.1rem;
+  height: 4.2rem;
+}
+
+header .header-wrap .header-nav ul {
   display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
   padding: 21px 20px;
   color: #707070;
-}
-
-.header-logo {
-  font-size: 3.8rem;
-  margin: 5px 0;
 }
 
 .header-hover {
@@ -186,53 +265,78 @@ header nav ul {
 
 #first-v {
   background-color: #fff;
-  width: 1283px;
-  height: 800px;
+  width: 128.2rem;
+  height: 80rem;
   position: relative;
   color: #000000;
+}
+
+@media (max-width: 599px) {
+  #first-v {
+    width: 59.9rem;
+    height: 59.7rem;
+  }
 }
 
 #first-v .first-v-wrap {
   width: 100%;
   height: 100%;
-  display: flex;
   position: absolute;
   text-align: center;
+  background-image: url("../image/Blond woman with long curly beautiful hair@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
-#first-v .first-v-wrap .first-v_info {
-  width: 46%;
-  height: 100%;
+@media (max-width: 599px) {
+  #first-v .first-v-wrap {
+    background-image: url("../image/Blond woman with long curly beautiful hair.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+}
+
+#first-v .first-v-wrap .first-v_title {
+  text-align: center;
+  width: 30%;
+  height: 26.5%;
+  margin-top: 29.6rem;
+  margin-left: 10.7rem;
+  text-align: center;
   font-size: 3.8rem;
 }
 
-#first-v .first-v-wrap .first-v_info .first-v_title {
-  width: 100%;
-  height: 26.5%;
-  margin: 29.6rem auto;
-}
-
-#first-v .first-v-wrap .first-v_info .first-v_title .first-v_title_ja {
+#first-v .first-v-wrap .first-v_title .first-v_title_ja {
   margin-bottom: 4.8rem;
 }
 
-#first-v .first-v-wrap .first-v_info .first-v_title .first-v_title_en {
+#first-v .first-v-wrap .first-v_title .first-v_title_en {
   font-family: "Dancing Script", cursive;
 }
 
-#first-v .first-v-wrap .first-v-img {
-  width: 54%;
-  height: 100%;
-}
-
-#first-v .first-v-wrap .first-v-img img {
-  width: 100%;
-  height: 100%;
+@media (max-width: 599px) {
+  #first-v .first-v-wrap .first-v_title {
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    font-size: 2.8rem;
+  }
 }
 
 #menu {
-  width: 1282px;
-  height: 921px;
+  width: 128.2rem;
+  height: 92.1rem;
+}
+
+@media (max-width: 599px) {
+  #menu {
+    width: 59.9rem;
+    height: 184.373rem;
+  }
 }
 
 #menu .menu-wrap {
@@ -242,9 +346,27 @@ header nav ul {
   margin-left: 10.7rem;
 }
 
+@media (max-width: 599px) {
+  #menu .menu-wrap {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 #menu .menu-wrap .menu-item {
   width: 28%;
   height: 100%;
+}
+
+@media (max-width: 599px) {
+  #menu .menu-wrap .menu-item {
+    width: 100%;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
 }
 
 #menu .menu-wrap .menu-item .menu-img {
@@ -268,59 +390,143 @@ header nav ul {
 }
 
 #concept {
+  scroll-snap-align: start;
   background-color: #ffffff;
-  width: 1282px;
-  height: 967px;
+  width: 128.2rem;
+  height: 96.7rem;
   background: linear-gradient(#a193861f 50%, #a1938689 50%);
-  color: #707070;
+  color: #fff;
+}
+
+@media (max-width: 599px) {
+  #concept {
+    background: linear-gradient(#a193861f 20%, #a1938689 40%, #a1938689 40%);
+    width: 59.9rem;
+    height: 71.127rem;
+  }
 }
 
 .concept-wrap {
   display: flex;
   justify-content: space-between;
-  width: 84%;
+  width: 100%;
   height: 100%;
-  margin-left: 10.7rem;
+  padding-right: 10.7rem;
+  padding-left: 10.7rem;
 }
 
-.concept-wrap .concept-item_img {
+@media (max-width: 599px) {
+  .concept-wrap {
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+.concept-wrap .concept-item {
+  width: 100%;
+  height: 100%;
+}
+
+.concept-wrap .concept-item .concept-item_img {
   display: flex;
   width: 100%;
-  height: 67%;
+  height: 41.3rem;
 }
 
-.concept-wrap .concept-item_img img {
-  width: 100%;
-  height: 100%;
+@media (max-width: 599px) {
+  .concept-wrap .concept-item .concept-item_img {
+    height: 20.5rem;
+  }
 }
 
-.concept-wrap .concept-item_img :nth-child(2) {
+.concept-wrap .concept-item .concept-item_img .concept-item_img1 {
+  width: 63%;
+  height: 41.3rem;
+  background-image: url(../image/andrew-neel-f480QIEvwGI-unsplash@2x.png);
+  background-size: cover;
+  max-height: 100%;
+}
+
+@media (max-width: 599px) {
+  .concept-wrap .concept-item .concept-item_img .concept-item_img1 {
+    width: 50%;
+    background-image: url(../image/andrew-neel-f480QIEvwGI-unsplash.png);
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+}
+
+.concept-wrap .concept-item .concept-item_img .concept-item_img2 {
+  width: 37%;
+  height: 41.3rem;
+  max-height: 100%;
+  background-image: url(../image/joel-mott-mNYL0surXh8-unsplash@2x.png);
+}
+
+@media (max-width: 599px) {
+  .concept-wrap .concept-item .concept-item_img .concept-item_img2 {
+    width: 50%;
+    background-image: url(../image/joel-mott-mNYL0surXh8-unsplash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.concept-wrap .concept-item .concept-item_img :nth-child(2) {
   margin-left: 11px;
 }
 
-.concept-wrap .concept-item_info {
+.concept-wrap .concept-item .concept-item_info {
   display: flex;
   justify-content: space-between;
-  width: 94.4rem;
+  width: 100%;
   height: 13rem;
   margin: 6rem auto;
 }
 
-.concept-wrap .concept-item_info .concept-item_title {
+@media (max-width: 599px) {
+  .concept-wrap .concept-item .concept-item_info {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+  }
+}
+
+.concept-wrap .concept-item .concept-item_info .concept-item_title {
   width: 44.5rem;
   height: 4.2rem;
   font-size: 40px;
 }
 
-.concept-wrap .concept-item_info .concept-item_desc {
+@media (max-width: 599px) {
+  .concept-wrap .concept-item .concept-item_info .concept-item_title {
+    text-align: center;
+  }
+}
+
+.concept-wrap .concept-item .concept-item_info .concept-item_desc {
   width: 44.2rem;
   height: 13rem;
 }
 
+@media (max-width: 599px) {
+  .concept-wrap .concept-item .concept-item_info .concept-item_desc {
+    margin-top: 1.8rem;
+  }
+}
+
 #access {
-  width: 1282px;
-  height: 767px;
+  width: 128.2rem;
+  height: 76.7rem;
   background-color: #a193861f;
+}
+
+@media (max-width: 599px) {
+  #access {
+    width: 59.9rem;
+  }
 }
 
 #access .access-wrap {
@@ -360,9 +566,15 @@ header nav ul {
 
 footer {
   background-color: #ffffff;
-  width: 1282px;
+  width: 128.2rem;
   height: 34.2rem;
   color: #7070704d;
+}
+
+@media (max-width: 599px) {
+  footer {
+    width: 59.9rem;
+  }
 }
 
 .footer-wrap {
