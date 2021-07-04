@@ -342,8 +342,8 @@ header .header-wrap .header-nav ul {
 #menu .menu-wrap {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   width: 83%;
-  margin-left: 10.7rem;
 }
 
 @media (max-width: 599px) {
