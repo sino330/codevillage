@@ -25,8 +25,6 @@ pushBtn.addEventListener("click", function () {
   pushBtn.textContent = data[imgNum].text;
 });
 
-
-
 skipBtn.addEventListener('click',function(){
     imgSection.setAttribute('src',data[seasonNum.value].img);
 });
