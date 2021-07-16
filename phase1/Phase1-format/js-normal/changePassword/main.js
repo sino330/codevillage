@@ -61,5 +61,27 @@ const setPassword = document.getElementById("setPassword");
 // });
 
 // 追加チャレンジ3
+setPassword.addEventListener('click',function(){
+    const confirmPassword=document.getElementById('confirmPassword').value;
+    const newPassword=document.getElementById('newPassword').value;
+    if(PasswordValue===confirmPassword){
+        if(PasswordValue!==newPassword){
+            const reserach=/abc/g;
+            let result=newPassword.search(reserach);
+            console.log(result);
+            if(result<0){
+            PasswordValue=newPassword;
+            nowPassword.textContent=`現在のパスワードは${PasswordValue}`;
+            alert(`新しいパスワードは${PasswordValue}です`);
+            }else{
+             alert('「abc」を含むものは使えません');
+            }
+        }else{
+            alert('同じパスワードは使えません');
+        }
+    }else{
+        alert('パスワードが間違っています');
+    }
+});
 
 // 追加チャレンジ総合
