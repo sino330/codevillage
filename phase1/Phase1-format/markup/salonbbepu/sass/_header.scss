@@ -6,9 +6,8 @@ header {
   z-index: 20;
   @include sp {
     width: 59.9rem;
-    height: 70rem;
-    background-color: #fff;
     height: 7rem;
+    background-color: #fff;
     position: relative;
   }
   .header-wrap {

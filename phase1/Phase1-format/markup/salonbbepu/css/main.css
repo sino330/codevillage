@@ -112,6 +112,7 @@ input, select {
 }
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 
 body {
@@ -126,7 +127,7 @@ body {
   padding: 26rem 0rem 10.7rem 0rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .inner {
     width: 100%;
     height: 100%;
@@ -137,16 +138,16 @@ body {
 
 .title {
   color: #707070;
-  font-size: 18px;
+  font-size: 1.8rem;
   display: flex;
   justify-content: left;
   align-items: center;
   font-size: 1.8rem;
   margin-left: 10.7rem;
-  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .title {
     margin-left: 2rem;
   }
@@ -168,12 +169,11 @@ header {
   z-index: 20;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   header {
     width: 59.9rem;
-    height: 70rem;
-    background-color: #fff;
     height: 7rem;
+    background-color: #fff;
     position: relative;
   }
 }
@@ -183,7 +183,7 @@ header .header-wrap {
   width: 70.7rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   header .header-wrap {
     width: 100%;
     justify-content: space-between;
@@ -195,7 +195,7 @@ header .header-wrap .header-logo {
   margin: 5px 0;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   header .header-wrap .header-logo {
     font-weight: bold;
     font-size: 2.2rem;
@@ -210,7 +210,7 @@ header .header-wrap .ham {
   display: none;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   header .header-wrap .ham {
     display: flex;
     width: 1.6rem;
@@ -231,7 +231,7 @@ header .header-wrap .header-nav {
   height: 4.1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   header .header-wrap .header-nav {
     display: none;
   }
@@ -271,7 +271,7 @@ header .header-wrap .header-nav ul {
   color: #000000;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #first-v {
     width: 59.9rem;
     height: 59.7rem;
@@ -289,7 +289,7 @@ header .header-wrap .header-nav ul {
   background-position: right top;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #first-v .first-v-wrap {
     background-image: url("../image/Blond woman with long curly beautiful hair.png");
     background-size: cover;
@@ -316,7 +316,7 @@ header .header-wrap .header-nav ul {
   font-family: "Dancing Script", cursive;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #first-v .first-v-wrap .first-v_title {
     color: #fff;
     position: absolute;
@@ -332,7 +332,7 @@ header .header-wrap .header-nav ul {
   height: 92.1rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #menu {
     width: 59.9rem;
     height: 184.373rem;
@@ -346,7 +346,7 @@ header .header-wrap .header-nav ul {
   width: 83%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #menu .menu-wrap {
     width: 94%;
     display: flex;
@@ -361,7 +361,7 @@ header .header-wrap .header-nav ul {
   height: 100%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #menu .menu-wrap .menu-item {
     width: 100%;
     padding-left: 0.2rem;
@@ -398,7 +398,7 @@ header .header-wrap .header-nav ul {
   color: #fff;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #concept {
     background: linear-gradient(#a193861f 20%, #a1938689 40%, #a1938689 40%);
     width: 59.9rem;
@@ -415,7 +415,7 @@ header .header-wrap .header-nav ul {
   padding-left: 10.7rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap {
     padding: 0 1rem 0 1rem;
   }
@@ -432,7 +432,7 @@ header .header-wrap .header-nav ul {
   height: 41.3rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap .concept-item .concept-item_img {
     height: 20.5rem;
   }
@@ -446,7 +446,7 @@ header .header-wrap .header-nav ul {
   max-height: 100%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap .concept-item .concept-item_img .concept-item_img1 {
     width: 50%;
     background-image: url(../image/andrew-neel-f480QIEvwGI-unsplash.png);
@@ -463,7 +463,7 @@ header .header-wrap .header-nav ul {
   background-image: url(../image/joel-mott-mNYL0surXh8-unsplash@2x.png);
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap .concept-item .concept-item_img .concept-item_img2 {
     width: 50%;
     background-image: url(../image/joel-mott-mNYL0surXh8-unsplash.png);
@@ -484,7 +484,7 @@ header .header-wrap .header-nav ul {
   margin: 6rem auto;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap .concept-item .concept-item_info {
     display: flex;
     justify-content: space-around;
@@ -500,7 +500,7 @@ header .header-wrap .header-nav ul {
   font-size: 40px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap .concept-item .concept-item_info .concept-item_title {
     text-align: center;
   }
@@ -511,7 +511,7 @@ header .header-wrap .header-nav ul {
   height: 13rem;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .concept-wrap .concept-item .concept-item_info .concept-item_desc {
     margin-top: 1.8rem;
   }
@@ -523,7 +523,7 @@ header .header-wrap .header-nav ul {
   background-color: #a193861f;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   #access {
     width: 59.9rem;
   }
@@ -571,7 +571,7 @@ footer {
   color: #7070704d;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   footer {
     width: 59.9rem;
   }

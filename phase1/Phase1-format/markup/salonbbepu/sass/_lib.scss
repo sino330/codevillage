@@ -1,17 +1,17 @@
 @mixin pc {
-  @media (min-width: 1025px) {
+  @media (min-width: 960px) {
     @content;
   }
 }
 
 @mixin tab {
-  @media (max-width: 1024px) {
+  @media (max-width: 959px) {
     @content;
   }
 }
 
 @mixin sp {
-  @media (max-width: 599px) {
+  @media (max-width: 600px) {
     @content;
   }
 }
@@ -20,6 +20,7 @@
 html {
   // 10pxで1rem
   font-size: 62.5%;
+  width:100%;
 }
 
 body {
@@ -45,13 +46,13 @@ body {
 
 .title {
   color: #707070;
-  font-size: 18px;
+  font-size: 1.8rem;
   display: flex;
   justify-content: left;
   align-items: center;
   font-size: 1.8rem;
   margin-left: 10.7rem;
-  margin-bottom: 11px;
+  margin-bottom: 1.1rem;
   @include sp{
     margin-left: 2rem; ;
   }
