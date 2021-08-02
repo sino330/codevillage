@@ -23,12 +23,17 @@ console.log(setNum);
 // inputタグの読み込み
 const numCheck = document.getElementById("numCheck");
 // clearをtueになるまで繰り返しをさせるためfalseで設定
-const clear = false;
+let clear = false;
+// countを定義
+let count =0;
+
 
 // numCheckを押すとイベントリスナー発火
 numCheck.addEventListener("click", function () {
-  // 繰り返し処理(trueになるまで)
-  while(!clear){
+  // bottonを押すとcountを追加
+  count+=1;
+  console.log(`count:${count}`);
+
   // inputのvalue取得
   const ansNum = document.getElementById("answerNum").value;
   // 3桁の数字が入力されているか確認(正規表現)
@@ -46,16 +51,14 @@ numCheck.addEventListener("click", function () {
     alert("異なる3桁の数字を入力してください");
   }
 
-  console.log(ansNum.length, ansNum[0], ansNum[1], ansNum[2]);
-
   // eatとbiteの定義
   let eat = 0;
   let bite = 0;
+
+  
   // 配列をi,jに代入
   for (let i = 0; i < setNum.length; i++) {
     for (let j = 0; j < ansNum.length; j++) {
-      console.log(`"i"=${i}`, setNum[i]);
-      console.log(`"j"=${j}`, ansNum[j]);
       // 配列数字が1個合えばeatに1を足す、違えばbiteに1を足す
       if (setNum[i] == ansNum[j]) {
         if (j == i) {
@@ -68,10 +71,16 @@ numCheck.addEventListener("click", function () {
   }
   // eatとbiteのalert
   alert(`eat:${eat}、bite:${bite}`);
-  // eatが3だった場合clear
-  if (eat === 3) {
-    alert("正解");
-    clear = true;
-  }
-  };
+    // eatが3だった場合clear
+    if (eat === 3) {
+      alert("正解");
+      initSetNum();
+    }
+    if(count===10){
+      alert('game over');
+      initSetNum();
+    }
 });
+
+// // 繰り返し処理(trueになるまで)
+//     while (!clear) {}
