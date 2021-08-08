@@ -47,6 +47,7 @@ function newSheet() {
       else
         switch (n) {
           case 0:
+            //td内にtextContent追加
             td.textContent = setNum1;
             break;
           case 1:
