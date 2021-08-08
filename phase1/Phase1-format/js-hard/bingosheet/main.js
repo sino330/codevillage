@@ -6,6 +6,13 @@ const row = 5;
 const table = document.getElementById("view");
 // 空の配列を作成
 tableSheet = [];
+//n列毎に1～15*nの数字を作成
+let setNum1 = Math.floor(15 * Math.random() + 1);
+let setNum2 = Math.floor(15 * Math.random() + 16);
+let setNum3 = Math.floor(15 * Math.random() + 31);
+let setNum4 = Math.floor(15 * Math.random() + 46);
+let setNum5 = Math.floor(15 * Math.random() + 61);
+
 // 関数指定
 function newSheet() {
   //line(行)の作成
@@ -15,7 +22,9 @@ function newSheet() {
     //row列の作成
     for (let n = 0; n < row; n++) {
       let td = document.createElement("td");
+      //1行目の文字を入力(i=0の場合)
       if (0 === i)
+        //それぞれの文字をマス毎に入力
         switch (n) {
           case 0:
             td.textContent = "B";
@@ -33,27 +42,30 @@ function newSheet() {
             td.textContent = "O";
             break;
         }
+      //0行以外の場合
+      //それぞれのマスを配列
       else
         switch (n) {
           case 0:
-            (n, td);
+            td.textContent = setNum1;
             break;
           case 1:
-            (n, td);
+            td.textContent = setNum2;
             break;
+          //3行目、3列目はfree
           case 2:
             if (3 === i) {
               td.textContent = "free";
               td.setAttribute("class", "hit-num");
               break;
             }
-            (n, td);
+            td.textContent = setNum3;
             break;
           case 3:
-            (n, td);
+            td.textContent = setNum4;
             break;
           case 4:
-            (n, td);
+            td.textContent = setNum5;
             break;
         }
       tr.appendChild(td);
@@ -61,46 +73,16 @@ function newSheet() {
   }
 }
 console.log(tableSheet);
-newline();
-// rowの追加
-// trの中にtdの追加
-// // idを設定
-// cell6.setAttribute("id", "0");
-// cell7.setAttribute("id", "1");
-// cell8.setAttribute("id", "2");
-// cell9.setAttribute("id", "3");
-// cell10.setAttribute("id", "4");
-// cell11.setAttribute("id", "5");
-// cell12.setAttribute("id", "6");
-// cell13.setAttribute("id", "7");
-// cell14.setAttribute("id", "8");
-// cell15.setAttribute("id", "9");
-// cell17.setAttribute("id", "10");
-// cell18.setAttribute("id", "11");
-// cell19.setAttribute("id", "12");
-// cell20.setAttribute("id", "13");
-// cell21.setAttribute("id", "14");
-// cell22.setAttribute("id", "15");
-// cell23.setAttribute("id", "16");
-// cell24.setAttribute("id", "17");
-// cell25.setAttribute("id", "18");
-// cell26.setAttribute("id", "19");
-// cell27.setAttribute("id", "20");
-// cell28.setAttribute("id", "21");
-// cell29.setAttribute("id", "22");
-// cell30.setAttribute("id", "23");
-// 1列目の文字入力
-// cell1.innerHTML = "B";
-// cell2.innerHTML = "I";
-// cell3.innerHTML = "N";
-// cell4.innerHTML = "G";
-// cell5.innerHTML = "O";
+newSheet();
 
-// const souce1 =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-// const b=[];
-// b[0] = Souce.splice(math.floor(math.random() * souce1.length),1);
-// b[1] = Souce.splice(math.floor(math.random() * souce1.length), 1);
-// b[2] = Souce.splice(math.floor(math.random() * souce1.length), 1);
-// b[3] = Souce.splice(math.floor(math.random() * souce1.length), 1);
-// b[4] = Souce.splice(math.floor(math.random() * souce1.length), 1);
-// console.log(b);
+//  tdそれぞれにidを指定
+// td.setAttribute("id",);
+
+//tdの中に数字を入力
+//td.textContent="";
+
+//チャレンジ問題
+//hitNumの読み込み
+const button = document.getElementById("hitNum");
+//hitNumを押したらイベントリスナー発火
+button.addEventListener("click", function () {});
