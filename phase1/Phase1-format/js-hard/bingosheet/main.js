@@ -240,5 +240,5 @@ const button = document.getElementById("hitNum");
 //hitNumを押したらイベントリスナー発火
 button.addEventListener("click", function () {
   let e = Math.floor(75 * Math.random() + 1);
-  console.log(e);
+  alert(e);
 });
