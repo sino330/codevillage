@@ -241,4 +241,5 @@ const button = document.getElementById("hitNum");
 button.addEventListener("click", function () {
   let e = Math.floor(75 * Math.random() + 1);
   alert(e);
+  console.log(e);
 });
