@@ -80,6 +80,7 @@ function newSheet() {
         switch (n) {
           //1列目の場合
           case 0:
+            console.log(n,td);
             if (1 === i) {
               td.textContent = numB[0];
               td.setAttribute("id", "0");
@@ -197,7 +198,6 @@ newSheet();
 //   }
 // };
 
-
 //n列毎に1～15*arr.lengthの数字を作成
 // let makeCol=function(base){
 //   //1～15の数字の配列を作成
@@ -234,12 +234,42 @@ newSheet();
 
 // console.log(numbers[2][0]);
 
+
 //チャレンジ問題
 //hitNumの読み込み
 const button = document.getElementById("hitNum");
+//空配列作成
+delNum = [];
+
 //hitNumを押したらイベントリスナー発火
 button.addEventListener("click", function () {
-  let e = Math.floor(75 * Math.random() + 1);
+  //繰り返し処理
+  while(true){
+    //randomで1~75までの数字を生成
+    let e = Math.floor(15 * Math.random() + 1);
+    //重複しない
+    if(!delNum.includes(e)){
+      delNum.push(e);
+      break;
+    }
+    
+  }
   alert(e);
-  console.log(e);
+
+  
+    
+    if (!numB.includes(e)) {
+      //alertで表示
+      alert(e);
+      //空配列にrandomの数字を格納
+      delNum.push(e);
+      if (numB.indexOf(e)) {
+        let td = document.querySelector("td");
+        td.setAttribute("class", "hit-num");
+      }
+    };
+  
+　console.log(delNum);
 });
+
+// td.setAttribute("class", "hit-num");
