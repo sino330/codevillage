@@ -80,7 +80,7 @@ function newSheet() {
         switch (n) {
           //1列目の場合
           case 0:
-            console.log(n,td);
+            console.log(n, td);
             if (1 === i) {
               td.textContent = numB[0];
               td.setAttribute("id", "0");
@@ -180,49 +180,6 @@ function newSheet() {
 }
 newSheet();
 
-//※重複しない数字を列毎に入力
-// setNum = function (i) {
-//   //1～15までの数字を作成
-//   const n = Math.floor(15 * Math.random() * i + 1);
-//   //入力する空配列の作成
-//   let sheet = [];
-//   //numBにrandomで取得したbの配列からindex数字にあった数字を取り出す
-//   //sheetに作成したnが含まれない場合
-//   if (!sheet.includes(n)) {
-//     //nをpush
-//     sheet.push(n);
-//     //nをtextcontentに表示
-//     td.textContent = n;
-//     //sheetに入れた配列の-1をidに表示
-//     td.setAttribute("id", sheet.length - 1);
-//   }
-// };
-
-//n列毎に1～15*arr.lengthの数字を作成
-// let makeCol=function(base){
-//   //1～15の数字の配列を作成
-//   var arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
-//   var list=[];
-//   for(let i=1;i<line;i++){
-//     //1~15の乱数を生成
-//     var a=Math.floor(Math.random()*arr.length);
-//     list.push(arr[a]+base);
-//       //数字が重複しないように配列から削除
-//       arr.splice(a,1);
-//   }
-// }
-
-// let arrayB=array(5);
-//             arrayB[0]=Math.floor(Math.random()*15+1);
-//             td.textContent=arrayB[0];
-//             do{
-//               arrayB[1]=Math.floor(Math.random()*15+1);
-//             }while(arrayB[0]===arrayB[1]);
-//             do{
-//               arrayB[2]=Math.floor(Math.random()*15+1);
-//             while(arrayB[0]===arrayB[1]||arrayB[])
-//             }
-
 //※二次元配列例
 // const numbers = [
 //   [1, 2, 3, 4, 5],
@@ -231,9 +188,7 @@ newSheet();
 //   [31, 32, 33, 34, 35],
 //   [41, 42, 43, 44, 45],
 // ];
-
 // console.log(numbers[2][0]);
-
 
 //チャレンジ問題
 //hitNumの読み込み
@@ -243,33 +198,152 @@ delNum = [];
 
 //hitNumを押したらイベントリスナー発火
 button.addEventListener("click", function () {
+  let e;
   //繰り返し処理
-  while(true){
+  while (true) {
     //randomで1~75までの数字を生成
-    let e = Math.floor(15 * Math.random() + 1);
+    e = Math.floor(75* Math.random() + 1);
     //重複しない
-    if(!delNum.includes(e)){
+    if (!delNum.includes(e)) {
       delNum.push(e);
+      alert(`数字は${e}番です`);
       break;
     }
-    
   }
-  alert(e);
+  console.log(delNum);
 
-  
-    
-    if (!numB.includes(e)) {
-      //alertで表示
-      alert(e);
-      //空配列にrandomの数字を格納
-      delNum.push(e);
-      if (numB.indexOf(e)) {
-        let td = document.querySelector("td");
-        td.setAttribute("class", "hit-num");
+  // delNumが配列Bに含まれている場合
+  let findindex = numB.indexOf(e);
+  if (-1 === findindex) {
+    findindex= numI.indexOf(e)+5;
+    if(4===findindex){
+      findindex = numN.indexOf(e)+10;
+      if(9===findindex){
+        findindex = numG.indexOf(e)+14;
+        if(13===findindex){
+          findindex = numO.indexOf(e)+19;
+          if(18===findindex){
+            return;
+          }
+        }
       }
-    };
-  
-　console.log(delNum);
+    }
+  }
+  console.log(findindex)
+  let td = document.getElementById(findindex);
+  td.setAttribute("class", "hit-num");
 });
 
-// td.setAttribute("class", "hit-num");
+
+
+//解答
+
+
+// const sheet = document.getElementById('view');
+// const sheetContent = [];
+
+// const newSheet = function() {
+//   for (let x = 0; x < 6; x++) {
+//     const tr = document.createElement('tr');
+//     sheet.appendChild(tr);
+//     for (let y = 0; y < 5; y++) {
+//       let td = document.createElement('td');
+//       if (x === 0) {
+//         switch (y) {
+//           case 0: {
+//             td.textContent = 'B';
+//             break;
+//           }
+//           case 1: {
+//             td.textContent = 'I';
+//             break;
+//           }
+//           case 2: {
+//             td.textContent = 'N';
+//             break;
+//           }
+//           case 3: {
+//             td.textContent = 'G';
+//             break;
+//           }
+//           case 4: {
+//             td.textContent = 'O';
+//             break;
+//           }
+//         }
+//       } else {
+//         switch (y) {
+//           case 0: {
+//             check(y, td);
+//             break;
+//           }
+//           case 1: {
+//             check(y, td);
+//             break;
+//           }
+//           case 2: {
+//             if (x === 3) {
+//               td.textContent = 'free';
+//               td.setAttribute('class', 'hit-num');
+//               break;
+//             }
+//             check(y, td);
+//             break;
+//           }
+//           case 3: {
+//             check(y, td);
+//             break;
+//           }
+//           case 4: {
+//             check(y, td);
+//             break;
+//           }
+//         }
+//       }
+//       tr.appendChild(td);
+//     }
+//   }
+// };
+
+// const check = function(y, td) {
+//   while (true) {
+//     let calc = Math.floor(Math.random() * 15 + 15 * y + 1);
+
+//     if (!sheetContent.includes(calc)) {
+//       sheetContent.push(calc);
+//       td.textContent = calc;
+//       td.setAttribute('id', sheetContent.length - 1);
+//       break;
+//     }
+//   }
+// };
+
+// console.log(sheetContent);
+
+// newSheet();
+
+// // チャレンジ問題
+
+// const numLog = [];
+
+// const hitNum = document.getElementById('hitNum');
+
+// hitNum.addEventListener('click', function() {
+//   while (true) {
+//     let randomNum = Math.floor(Math.random() * 75 + 1);
+
+//     if (!numLog.includes(randomNum)) {
+//       alert(`数字は${randomNum}番です！`);
+//       numLog.push(randomNum);
+//       let result = sheetContent.indexOf(randomNum);
+//       if (result === -1) {
+//         return;
+//       }
+//       const target = document.getElementById(result);
+//       target.setAttribute('class', 'hit-num');
+//       break;
+//     }
+//   }
+// });
+
+// // チャレンジ問題 ここまで
