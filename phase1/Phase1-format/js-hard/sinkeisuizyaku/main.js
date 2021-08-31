@@ -23,6 +23,7 @@ for (i = 0; i < 8; i++) {
   card.index=i;
   //card番号を入力
   card.number=cardNum[i];
+  //card backの時点ではinnerHTMLは空に指定
   card.innerHTML="";
 }
 
