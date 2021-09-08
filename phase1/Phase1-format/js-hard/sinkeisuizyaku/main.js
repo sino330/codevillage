@@ -20,11 +20,13 @@ for (i = 0; i < 8; i++) {
   //panelにcardを追加
   panel.appendChild(card);
   //cardにindex番号を持たせる(個別にcardをclick可能とする)
-  card.index=i;
+  card.index = i;
   //card番号を入力
-  card.number=cardNum[i];
+  card.number = cardNum[i];
   //card backの時点ではinnerHTMLは空に指定
-  card.innerHTML="";
+  card.innerHTML = "";
+  //cardがclickされた時にイベントリスナー発火
+  card.addEventListener("click", push);
 }
 
 //panelに入力するrandomな順番の配置を作成
@@ -39,21 +41,62 @@ function arrayShuffle(array) {
 }
 
 //turnの定義
-let count = 0;
+let turn = 0;
+//1枚目、2枚目のcard
+let first = null;
+let second = null;
+//cardのtimeout
+let timer = null;
+//捲った数のcount
+let count=0;
 
 //buttonが押された時、数字を表示
-function hide(e) {
-  div = e.target;
+function push(e) {
+  if(timer){
+    clearTimeout(timer);
+    judge();
+  }
+  let div = e.target;
+  //div要素のinnerHTMLをnumberに変更
+  div.innerHTML = div.number;
+  //classNameをcardに変更
+  div.className = "card";
+  //firstに数字をセット
+    if (!first) {
+      first = div;
+      //同じ数字が押されないよう処理
+    } else if (first.index == div.index) {
+      return;
+      //firstがsetされていたらsecondを設置
+    } else {
+      second = div;
+      //firstとsecondが一致しているか関数を定義
+      timer = setTimeout(judge, 500);
+      function judge() {
+        if (first.number == second.number) {
+          first.className = "card finish";
+          second.className = "card finish";
+          count+=2;
+
+          if(cardNum.length==count){
+            alert("終了です");
+            window.location.reload();
+          }
+        } else {
+          first.innerHTML = "";
+          second.innerHTML = "";
+          first.className = "card back";
+          second.className = "card back";
+        }
+        first = null;
+        second = null;
+        timer = null;
+      }
+  }
 }
-count += 1;
-console.log(count);
 
 //数字が合っていればclassをfinish、そうでなければ再度裏返す
-// if(true){
 
-// }else{
-
-// }
 
 //2つの数字が合っていればclassを"finish"、そうでなければ"back"で裏側に戻す
 
