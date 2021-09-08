@@ -17,7 +17,7 @@ reset.addEventListener('click',function(){
     textarea=""
 });
 
-//追加チャレンジ問題
+//<追加チャレンジ問題>
 const iniDel=document.getElementById('iniDel');
 const endDel=document.getElementById('endDel');
 

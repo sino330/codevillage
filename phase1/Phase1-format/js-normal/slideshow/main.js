@@ -24,7 +24,7 @@ pushBtn.addEventListener("click", function () {
   imgSection.setAttribute("src", data[imgNum].img);
   pushBtn.textContent = data[imgNum].text;
 });
-
+//<チャレンジ問題>
 skipBtn.addEventListener('click',function(){
     imgSection.setAttribute('src',data[seasonNum.value].img);
 });

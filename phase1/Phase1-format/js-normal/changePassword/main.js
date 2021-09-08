@@ -25,7 +25,7 @@ const setPassword = document.getElementById("setPassword");
 //   }
 // });
 
-// 追加チャレンジ1
+// <追加チャレンジ1>
 // setPassword.addEventListener("click", function () {
 //   const confirmPassword = document.getElementById("confirmPassword").value;
 //   const newPassword = document.getElementById("newPassword").value;
@@ -42,7 +42,7 @@ const setPassword = document.getElementById("setPassword");
 //   }
 // });
 
-// 追加チャレンジ2
+// <追加チャレンジ2>
 // setPassword.addEventListener("click", function () {
 //   const confirmPassword = document.getElementById("confirmPassword").value;
 //   const newPassword = document.getElementById("newPassword").value;
@@ -60,7 +60,7 @@ const setPassword = document.getElementById("setPassword");
 //   }
 // });
 
-// 追加チャレンジ3
+// <追加チャレンジ3>
 setPassword.addEventListener('click',function(){
     const confirmPassword=document.getElementById('confirmPassword').value;
     const newPassword=document.getElementById('newPassword').value;

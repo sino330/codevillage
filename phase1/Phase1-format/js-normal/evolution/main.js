@@ -38,7 +38,7 @@ setBtn.addEventListener("click", function () {
     fourth.appendChild(fourthWord);
   }
 });
-
+//resetのevent発火
 reset.addEventListener("click", function () {
   showImg.innerHTML = "";
 });

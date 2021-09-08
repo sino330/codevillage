@@ -15,3 +15,4 @@ confirmTime.addEventListener("click", function () {
     alert(`もう${sec}秒だ！再挑戦`);
   }
 });
+//<チャレンジ問題>

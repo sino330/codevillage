@@ -51,7 +51,7 @@
 //   };
 // });
 
-// チャレンジ問題
+// <チャレンジ問題>
 const setHand = document.getElementById("setHand");
 const nowTurn = document.getElementById("player");
 const player1Hand = document.getElementById("player1Hand");
