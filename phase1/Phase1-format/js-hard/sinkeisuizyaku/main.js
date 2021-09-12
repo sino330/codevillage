@@ -52,7 +52,8 @@ let count = 0;
 
 //buttonが押された時、数字を表示
 function push(e) {
-  if (timer) {
+  timer=true;
+  if (timer===null) {
     clearTimeout(timer);
     judge();
   }
@@ -75,13 +76,15 @@ function push(e) {
   } else {
     second = div;
     //firstとsecondが一致しているか関数を定義
-    timer = setTimeout(judge, 500);
+    timer = setTimeout(judge, 2000);
+    check(playerturn);
+
     function judge() {
       if (first.number == second.number) {
         first.className = "card finish";
         second.className = "card finish";
         count += 2;
-
+        
         if (cardNum.length == count) {
           alert("終了です");
           window.location.reload();
@@ -190,17 +193,39 @@ function push(e) {
 // };
 
 //<チャレンジ問題>
-let player1Point=0;
-let player2Point=0;
+let player1Point = 0;
+let player2Point = 0;
 let playerturn = 1;
 
-function check(){
-  
-}
-
 const nextplayer = document.getElementById("nextPlayer");
-nextplayer.textContent = `次はの番です`;
+nextplayer.textContent = "次はplayer1の番です";
 const player1 = document.getElementById("player1Point");
-player1.textContent=`player1:${player1Point}`;
-const player2 =document.getElementById("player2Point");
+player1.textContent = `player1:${player1Point}`;
+const player2 = document.getElementById("player2Point");
 player2.textContent = `player2:${player2Point}`;
+
+function check() {
+  if (playerturn === 1) {
+    if (first.number == second.number) {
+      player1Point += 1;
+      player1.textContent = `player1:${player1Point}`;
+    } else {
+      playerturn += 1;
+      nextplayer.textContent = "次はplayer2の番です";
+      return;
+    }
+  } 
+
+  if (playerturn === 2) {
+    if (first.number == second.number) {
+      player2Point++;
+      player2.textContent = `player2:${player2Point}`;
+    }else{
+      playerturn--;
+      nextplayer.textContent = "次はplayer1の番です";
+    }
+  }
+  console.log(`"playerturn"${playerturn}`);
+  console.log(`"player1Point"${player1Point}`);
+  return;
+}
