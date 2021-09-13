@@ -53,10 +53,10 @@ let count = 0;
 //buttonが押された時、数字を表示
 function push(e) {
   timer=true;
-  if (timer===null) {
-    clearTimeout(timer);
-    judge();
-  }
+  // if (timer===null) {
+  //   clearTimeout(timer);
+  //   judge();
+  // }
   let div = e.target;
   if (div.innerHTML === "") {
     //div要素のinnerHTMLをnumberに変更
