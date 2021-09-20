@@ -95,3 +95,99 @@
     }
   }
 }
+
+
+//sample//
+
+// #concept {
+//     height: 100%;
+//     overflow: hidden; //innerのmarginもかかってしまうため対策
+//     background: linear-gradient(360deg, #A1938689 0%, #A1938689 58.3%, #A193861F 58.3%, #A193861F 100%);
+//     // グラデーションの応用。360deg = 下から上に向かって。 0%-58%まで濃色（違う色を指定するとグラデになる）、58-100%まで淡色
+// }
+
+
+
+// .con-img__wrap {
+//     display: flex;  
+//     justify-content: space-between;
+//     width: 100%;
+//     height: 63.8%; //img-height:413px ÷ inner-height:647px41
+//     @include sp {
+//         height: 34.9%; //205÷587px(inner-height)
+//     }
+//     div {
+//         overflow: hidden;
+//         &:nth-of-type(1) {
+//             width: 62.7%;
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//         &:nth-of-type(2) {
+//             width: 36.3%;
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//         @include sp {
+//             &:nth-of-type(1), &:nth-of-type(2) {
+//                 width: 49%;
+//                 img {
+//                     min-width: 100%;
+//                     height: auto;
+//                     object-fit: cover;
+//                     object-position: 100% 50%;
+//                     width: 43.7vw;
+//                     height: 30.8vh;
+//                 }
+
+//             }
+//         }
+//     }
+// }
+
+// .con-txt {
+//     margin-top: 69px;
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     color: #fff;
+//     @include sp {
+//         margin-top: 50px;
+//         flex-direction: column;
+//         // justify-content: space-between;
+//     }
+//     &__heading {
+//         font-family: "ヒラギノ明朝 Pro";
+//         font-size: 4rem;
+//         letter-spacing: 1.6rem;
+//         // width: 42.3%; //可変したときに折り返してしまう
+//         transform: translateY(-4.2rem);
+//         @include tab {
+//             font-size: 2.5rem;
+//             letter-spacing: 1rem;
+//             transform: translateY(-2rem);
+//         }
+//         @include sp {
+//             transform: translate(0);
+//             font-size: 1.8rem;
+//             letter-spacing: 0.72rem;
+//         }
+//     }
+//     &__desc {
+//         width: 39.2%;
+//         font-family: "ヒラギノ角ゴ Pro";
+//         font-size: 1.6rem;
+//         letter-spacing: 0.16rem;
+//         line-height: 2.7rem;
+//         @include tab {
+//             font-size: 1.3rem;
+//             line-height: 1.5rem;
+//         }
+//         @include sp {
+//             width: 100%;
+//             margin-top: 1.8rem;
+//         }
+//     }
+// }

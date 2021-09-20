@@ -49,3 +49,75 @@
     }
   }
 }
+
+//sample//
+
+// .menu-wrap {
+//     display: flex;
+//     justify-content: space-between;
+//     height: 100%;
+//     @include sp {
+//         flex-direction: column;
+//     }
+// }
+
+// .menu-item {
+//     width: 25.4%;
+//     min-width: 254px;
+//     display: flex;
+//     flex-direction: column;
+//     font-family: "Roboto Mono for Powerline";
+//     @include tab {
+//         width: 31%;
+//         min-width: 0;
+//     }
+//     @include sp {
+//         width: 100%;
+//         & + * {
+//             margin-top: 6.3rem;
+//         }
+//     }
+//     img { //クラス名に指定しても機能しない。
+//         width: 100%;
+
+//     }
+//     &__title {
+//         font-size: 3rem;
+//         letter-spacing: 0.3rem;
+//         margin-top: 3.7rem;
+//         text-align: center;
+//         @include tab {
+//             font-size: 1.7rem;
+//             margin-top: 2.7rem;
+//         }
+//         @include sp {
+//             font-size: 3rem;
+//             margin-top: 3rem;
+//             text-align: left;
+//             padding: 0 3.8%;
+//         }
+//     }
+//     &__desc, &__price{
+//         letter-spacing: 0.16rem;
+//         line-height: 1.9rem;
+//         margin-top: 3.4rem;
+//         padding: 0 3.7%;
+//         @include tab {
+//             font-size: 1.3rem;
+//             margin-top: 2.4rem;
+//         }
+//         @include sp {
+//             font-size: 1.6rem;
+//             padding: 0 3.8%;
+//         }
+//     }
+//     &__desc {
+//         @include sp {
+//             margin-top: 3rem;
+//         }
+//     }
+//     &__price {
+//         text-align: right;
+//         margin-top: 2.6rem;
+//     }
+// }

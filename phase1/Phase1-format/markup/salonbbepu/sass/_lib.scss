@@ -64,3 +64,164 @@ body {
     margin-left: 20px;
   }
 }
+
+//sample//
+
+// header {
+//     font-family: "Roboto Mono for Powerline";
+// }
+
+// .header-wrap {
+//     padding:6.8rem 6%;
+//     display: flex;
+//     align-items: center;
+//     position: absolute;
+//     top: 0;
+//     left: 0%;
+//     z-index: 10;
+//     width: 100%;
+//     @include tab {
+//         padding: 4.8rem 6%;
+//     }
+//     @include sp {
+//         position: fixed;
+//         background-color: #fff;
+//         padding: 2.4rem 5.3%; //21px/全体375px
+//         justify-content: space-between;
+//         height: 10.5vh;
+//     }
+// }
+
+// .header-title {
+//     color: #000;
+//     font-size: 3.8rem;
+//     letter-spacing: 0.38rem;
+//     @include tab {
+//         font-size: 2.8rem;
+//         letter-spacing: 0.28rem;
+//     }
+//     @include sp {
+//         font-size: 2.2rem;
+//         letter-spacing: 0.22rem;
+//     }
+// }
+
+// .header-nav {
+//     color: $gray;
+//     font-size: 1.8rem;
+//     letter-spacing: 0.18rem;
+//     margin-left: 2rem;
+//     width: 31%; //navの横幅÷全体
+//     ul {
+//         display: flex;
+//         li{
+//             height: 3.8rem; //タイトルの縦幅
+//             display: flex;
+//             flex-direction: column; //文字と下線を縦揃えに
+//             justify-content: center;
+//             & + * {
+//                 margin-left: 1.8rem; //メニューが増えても良いようにマージンで取った
+//                 @include tab {
+//                     margin-left: 1.3rem;
+//                 }
+//             }
+//             span{ //下線
+//                 content: "";
+//                 display: inline-block;
+//                 width: 0.1%; //0だとレイアウトが崩れる
+//                 opacity: 0; //↑の対策
+//                 height: 1px;
+//                 background-color: #000;
+//                 transform: translateY(0.3rem); //位置調整
+//             }
+//             &:hover {
+//                 color: #000;
+//                 span {
+//                     width: 100%;
+//                     transition: 0.5s;
+//                     opacity: 100;
+//                 }
+//             }    
+//         }
+//     }
+//     @include tab {
+//         font-size: 1.3rem;
+//         letter-spacing: 0.13rem;
+//         // text-shadow: 0 0.15rem 0.2rem rgba(255,255,255,0.2);
+//     }
+//     @include sp {
+//         display: none;
+//     }
+// }
+
+// .hum {
+//     display: none;
+//     @include sp {
+//         width: 4.3%;
+//         height: 1.4rem;
+//         display: block;
+//         position: relative;
+//         span {
+//             display: block;
+//             background-color: #3B4043;
+//             height: 2px;
+//             width: 16px;
+//             position: absolute;
+//             &:nth-of-type(2) {
+//                 top: 6px;
+//                 left: 0;
+//             }
+//             &:nth-of-type(3) {
+//                 top: 12px;
+//                 width: 10px;
+//             }
+//         }
+//     }
+// }
+
+// .hum.close {
+//     span {
+//         &:nth-of-type(1) {
+//             transform: rotate(45deg);
+//             top: 6px;
+//         }
+//         &:nth-of-type(2) {
+//             transform: rotate(315deg);
+//         }
+//         &:nth-of-type(3) {
+//             display: none;
+//         }
+//     }
+// }
+
+// .header-nav__sp {
+//     background: linear-gradient(270deg, rgba(237, 237, 237, 1), rgba(237, 237, 237, 0.6)) ;
+//     clip-path: ellipse(100% 80% at 100% 50% );
+//     color: #3B4043;
+//     font-size: 2.5rem;
+//     letter-spacing: 0.25rem;
+//     height: 89.5vh;
+//     width: 0%;
+//     opacity: 0;
+//     transition: 1s;
+//     position: absolute;
+//     position: fixed;
+//     top: 7rem;
+//     right: 0;
+//     z-index: 9;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     ul {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//         height: 50%;
+//     }
+// }
+
+// .header-nav__sp.open-menu {
+//     width: 100%;
+//     opacity: 100%;
+// }

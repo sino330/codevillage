@@ -38,3 +38,64 @@ footer {
   }
 }
 // btn立幅37px、横幅184px
+
+
+//sample//
+
+// .footer-inner {
+//     width: 100% - 8.3% *2;
+//     margin: 164.5px auto 62px;
+//     padding-top: 83.5px;
+//     display: flex;
+//     justify-content: space-between;
+//     border-top: 1px solid #70707036;
+//     @include sp {
+//         flex-direction: column-reverse;
+//         padding-top: 60.5px;
+//         margin: 63.5px auto 1.9rem;
+//         align-items: center;
+//     }
+// }
+
+// .ft-wrap {
+//     display: flex;
+//     align-items: center;
+//     @include sp {
+//         justify-content: space-between;
+//         margin-top: 6.2rem;
+//         width: 100%;
+//     }
+// }
+
+// .footer-title {
+//     font-family: "Roboto Mono for Powerline";
+//     color: #7070704D;
+//     font-size: 3.2rem;
+//     letter-spacing: 0.32rem;
+//     @include tab {
+//         font-size: 2.5rem;
+//         letter-spacing: 0.25rem;
+//     }
+//     @include sp {
+//         font-size: 1.8rem;
+//         letter-spacing: 0.18rem;
+//     }
+// }
+// .fa-wrap {
+//     color: black;
+//     letter-spacing: 0;
+//     font-size: 1.9rem;
+// }
+// .twitter {
+//     margin-left: 2.6rem;
+//     margin-right: 0.9rem;
+//     @include tab {
+//         margin-left: 1.6rem;
+//     }
+// }
+
+// .footer-reserve {
+//     padding: 1rem 4.1rem;
+//     color: $gray;
+//     border: 1px solid;
+// }

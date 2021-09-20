@@ -36,3 +36,68 @@
     }
   }
 }
+
+//sample//
+
+// #access {
+//     background-color: #A193861F;
+//     overflow: hidden;
+// }
+
+// .access-inner {
+//     margin: 26.5% 0 7.2%;
+//     @include sp {
+//         margin: 60px 0 63px;
+//     }
+//     .sec-title {
+//         margin-left: 8.3%;
+//     }
+// }
+
+// .address-wrap {
+//     display: flex;
+//     width: 100%;
+//     @include sp {
+//         flex-direction: column-reverse;
+//     }
+// }
+
+// .address {
+//     background-color: #D0C5BA;
+//     width: 39.5%;
+//     padding: 10.1rem 8.3%;
+//     @include tab {
+//         padding: 10.1rem 5.3%;
+//     }
+//     @include sp {
+//         width: 100%;
+//         padding: 3rem 5.3% 6rem;
+//     }
+//     &__title {
+//         color: #00000038;
+//         font-family: "Roboto Mono for Powerline";
+//         font-weight: bold;
+//         font-size: 2.4rem;
+//         letter-spacing: 0.24rem;
+//     }
+//     &__desc {
+//         font-family: "Roboto Mono for Powerline";
+//         color: #fff;
+//         letter-spacing: 0.16rem;
+//         margin-top: 3rem;
+//         li + * {
+//             margin-top: 2.4rem;
+//         }
+//         @include tab {
+//             font-size: 1.3rem;
+//         }
+//     }
+// }
+
+// .map {
+//     width: 60.5%;
+//     @include sp {
+//         width: 100%;
+//         height: 231px;
+//     }
+// }
